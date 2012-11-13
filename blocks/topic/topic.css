@@ -4,7 +4,8 @@
 }
 
 .topic_preview {
-    padding-left: 70px;
+    padding-left: 65px;
+    padding-top: 26px;
     margin-bottom: 20px;
 }
 
@@ -22,14 +23,17 @@
 .topic__date {
     display: inline-block;
     position: relative;
+    font-size: 13px;
 }
 
 .topic__comments {
     display: inline-block;
     position: relative;
+    font-size: 13px;
 }
 
 .topic__favorites {
     display: inline-block;
     position: relative;
+    font-size: 13px;
 }
