@@ -22,18 +22,24 @@
 
 .topic__date {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     position: relative;
     font-size: 13px;
 }
 
 .topic__comments {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     position: relative;
     font-size: 13px;
 }
 
 .topic__favorites {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
     position: relative;
     font-size: 13px;
 }
