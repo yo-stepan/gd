@@ -1,0 +1,35 @@
+.topic {
+    position: relative;
+    margin: 0 0;
+}
+
+.topic_preview {
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+
+.topic__content {
+    position: relative;
+    margin: 0 0 15px 0;
+}
+
+.topic__info {
+    position: relative;
+    background: #fff;
+    padding: 10px 10px;
+}
+
+.topic__date {
+    display: inline-block;
+    position: relative;
+}
+
+.topic__comments {
+    display: inline-block;
+    position: relative;
+}
+
+.topic__favorites {
+    display: inline-block;
+    position: relative;
+}

@@ -1,0 +1,47 @@
+.title {
+    position: relative;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    color: #6A6D74;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.title_big {
+    font-size: 28px;
+}
+
+.title_middle {
+    font-size: 20px;
+    margin-bottom: 14px;
+}
+
+.title_little {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.title_topic {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.title_light {
+    color: #efefef;
+    text-shadow: 0 1px 0 #000;
+}
+
+.title_darkBg {
+    color: #efefef;
+    text-shadow: 0 1px 0 #000;
+}
+
+.title_darkBg .title__item {
+    display: inline-block;
+    position: relative;
+    padding: 0 5px;
+    height: 26px;
+    line-height: 26px;
+
+    background: #000;
+    background: rgba(0, 0, 0, .5);
+}

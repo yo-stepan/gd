@@ -1,0 +1,12 @@
+.wrap {
+	position: relative;
+	width: 960px;
+	padding: 0 0;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+.wrap__blast {
+    position: relative;
+    height: 130px;
+}
