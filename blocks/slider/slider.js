@@ -4,6 +4,8 @@ $.widget("block.slider", {
         var block = this,
             $block = this.element;
 
+        block.$scrollbar = $('<div />').addClass('slider__scrollbar');
+
 
     }
 

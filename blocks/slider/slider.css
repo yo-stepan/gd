@@ -15,6 +15,16 @@
     width: 9999px;
 }
 
+.slider__scrollbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 20px;
+
+    background: rgba(0, 0, 0, .5);
+}
+
 .slider__item {
     position: relative;
     float: left;
