@@ -23,6 +23,27 @@
     height: 20px;
 
     background: rgba(0, 0, 0, .5);
+
+    opacity: 0;
+
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.slider:hover .slider__scrollbar {
+    opacity: 1;
+}
+
+.slider__drag {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+
+    width: 200px;
 }
 
 .slider__item {
