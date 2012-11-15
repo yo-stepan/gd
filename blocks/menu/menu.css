@@ -35,3 +35,9 @@
 .menu__link:hover {
     background: #353a3d;
 }
+
+.header_fixed .menu__item {
+    float: none;
+    display: block;
+    clear: both;
+}

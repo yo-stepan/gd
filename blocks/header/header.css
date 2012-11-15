@@ -1,7 +1,9 @@
 .header {
-    position: relative;
+    position: absolute;
+    left: 0;
+    right: 0;
     background: #181c20;
-    margin: -20px -20px 0;
+    margin: 0 0;
     padding: 0 0;
     height: 40px;
     overflow: hidden;
@@ -11,19 +13,31 @@
        -moz-box-shadow: inset 0 40px 40px -20px #2b3034;
          -o-box-shadow: inset 0 40px 40px -20px #2b3034;
             box-shadow: inset 0 40px 40px -20px #2b3034;
+
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
 }
 
-.header_blast {
-    margin-top: -20px;
+.header__blast {
     position: relative;
+    height: 40px;
+    margin: 0 -20px;
+    background: #181c20;
 }
 
 .header_fixed {
     position: fixed;
-    top: 0;
+    top: 20px;
     left: 50%;
-    width: 960px;
-    margin: 0 0 0 -480px;
+    width: 150px;
+    height: 500px;
+    margin: 0 0 0 -650px;
+
+    box-shadow: inset 0 40px 40px -20px #2b3034, 0 3px 6px 0 rgba(0, 0, 0, .5);
+}
+
+.header_fixed .header__logo {
+    display: none;
 }
 
 .header__logo {
