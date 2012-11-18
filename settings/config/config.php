@@ -42,16 +42,10 @@ $config['head']['default']['js'] = array(
     "___path.static.skin___/libs/jquery-1.8.2.min.js",
     "___path.static.skin___/libs/jquery-ui-1.8.24.custom.min.js",
 
-    "___path.static.skin___/_blocks/popup/popup.js",
-    "___path.static.skin___/_blocks/form/form.js",
-    "___path.static.skin___/_blocks/share/share.js",
-    "___path.static.skin___/_blocks/topic/topic_full.js",
-    "___path.static.skin___/_blocks/topicStats/topicStats.js",
-    "___path.static.skin___/_blocks/rating/rating.js",
-    "___path.static.skin___/_blocks/favorite/favorite.js",
-    "___path.static.skin___/_blocks/subscribe/subscribe.js",
+    "___path.static.skin___/blocks/slider/slider.js",
 
-    "___path.static.skin___/libs/jquery.init.js",
+    "___path.static.skin___/libs/jquery.initBlocks.js",
+
 );
 
 $config['head']['default']['css'] = array(
