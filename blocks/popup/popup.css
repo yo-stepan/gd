@@ -7,8 +7,9 @@
     left: 0;
     z-index: 100;
     text-align: center;
+
     background: #333;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, .3);
 }
 
 .popup__window {
@@ -17,11 +18,12 @@
     display: inline-block;
     *display: inline;
     *zoom: 1;
+
     text-align: left;
     color: #eee;
     padding: 15px;
     vertical-align: middle;
-    margin: 0 0;
+    margin: 100px 0;
     background: #f2f2f2;
 
     -webkit-border-radius: 4px;
@@ -68,6 +70,7 @@
     display: inline-block;
     *display: inline;
     *zoom: 1;
+
     vertical-align: middle;
     height: 100%;
     width: 0;
