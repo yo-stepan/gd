@@ -1,5 +1,5 @@
-// для открытия попапа нужно добавить класс 'popup__open' к кликабельному элменту
-// если у элмента есть атрибут 'href' - контент попапа загрузится по этой ссылке
+// для открытия попапа нужно добавить класс 'popup__open' к кликабельному элементу
+// если у элемента есть атрибут 'href' - контент попапа загрузится по этой ссылке
 
 $.widget("block.popup", {
 
@@ -42,11 +42,11 @@ $.widget("block.popup", {
     },
 
 
-    open: function(data) {
+    _init: function(params) {
         var block = this;
 
-        if (data.title) {
-            block.$popupHead.html(data.title);
+        if (params.title) {
+            block.$popupHead.html(params.title);
         }
 
         $('body')
@@ -57,43 +57,59 @@ $.widget("block.popup", {
 
         block.$overlay.show();
 
+        // todo: добавить лоадер
+
+        $.when(block._getData(params)).then(function(data) {
+            if (!data.bStateError) {
+
+            } else {
+                block._showError(data.sMsg ,data.sMsgTitle);
+            }
+        }, 'json');
+
     },
 
 
     // получение данных от сервера
-    _getData: function(url, params) {
+    _getData: function(params) {
         var block = this;
 
         //todo: создать объект gs и добавить security key!
-        params.security_ls_key = gs.security_key;
+        params.security_ls_key = gs.securityKey;
 
-//        if (url.indexOf('#') == 0) {
-//            return $(url).html();
-//        }
+        if (params.url.indexOf('#') == 0) {
+            return $(url).html();
+        }
 
         return $.ajax({
-            type: 'GET',
-            data: params,
+            type: 'POST',
+            data: params.url,
             url: url,
-//            success: function(data) {
-//
-//            },
             statusCode: {
                 500: function() {
-                    // todo: показывать сообщение об ошибке
-                    // block.$content.html(MW.serverError500);
-                    // block.$popup.removeClass('modalBox__popup_loading');
+                    //todo: обновить объект gs!
+                    block._showError(gs.popup.error500, gs.popup.errorTitle);
+                },
+                404: function() {
+                    //todo: обновить объект gs!
+                    block._showError(gs.popup.error404, gs.popup.errorTitle);
                 }
             },
             timeout: 20000,
             error: function(XMLHttpRequest, textStatus, errorThrown) {
-                // todo: показывать сообщение об ошибке
-                // block.$content.html(MW.connectionLost);
-                // block.$popup.removeClass('modalBox__popup_loading');
+                block._showError();
             }
         });
     },
 
+    _showError: function(error, title) {
+        // todo: обновить объект gs!
+        if (!error) error = gs.popup.later;
+        if (!title) title = gs.popup.errorTitle;
+
+        this.$popupContent.html(error);
+        this.$popupHead.html(title);
+    },
 
     // метод для получения ширины скроллбара
     _getScrollbarWidth: function() {
@@ -129,7 +145,10 @@ $.widget("block.popup", {
 
         block.$overlay.hide();
         block.$popupHead.add(block.$popupContent).html('');
-        $('body').removeClass('popup_body').removeAttr('style');
+
+        $('body')
+            .removeClass('popup_body')
+            .removeAttr('style');
     }
 
 });
@@ -139,9 +158,14 @@ $(function() {
     $('<div />').popup();
 
     $('.popup__open').on('click', function() {
-        $(':block-popup').popup('show');
 
+        var params = {},
+            $button = $(this);
 
+        params.url = $button.attr('href');
+
+        // выполняется _init();
+        $(':block-popup').popup(params);
 
         return false;
     });
