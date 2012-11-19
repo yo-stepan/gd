@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6632a39b-6b28-4397-acd2-045e80b448ba" name="Default" comment="popup fixes">
-      <change type="DELETED" beforePath="C:\github\gd\blocks.tpl" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/popup/popup.css" afterPath="$PROJECT_DIR$/blocks/popup/popup.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/popup/popup.js" afterPath="$PROJECT_DIR$/blocks/popup/popup.js" />
     </list>
     <ignored path="_html.iws" />
@@ -62,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="popup.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="popup.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/blocks/popup/popup.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="31" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
+            <state line="166" column="49" selection-start="5237" selection-end="5237" vertical-scroll-proportion="0.75574714">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -100,10 +98,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.tpl" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.tpl" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="244" column="63" selection-start="11977" selection-end="11977" vertical-scroll-proportion="0.42487562">
+            <state line="244" column="63" selection-start="11977" selection-end="11977" vertical-scroll-proportion="-16.423077">
               <folding />
             </state>
           </provider>
@@ -130,8 +128,8 @@
         <option value="$PROJECT_DIR$/blocks/default.css" />
         <option value="$PROJECT_DIR$/blocks/popup/popup.tpl" />
         <option value="$PROJECT_DIR$/blocks/popup/popup.css" />
-        <option value="$PROJECT_DIR$/blocks/popup/popup.js" />
         <option value="$PROJECT_DIR$/index.tpl" />
+        <option value="$PROJECT_DIR$/blocks/popup/popup.js" />
       </list>
     </option>
   </component>
@@ -495,15 +493,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/popup/popup.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="31" selection-start="1653" selection-end="1653" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="95" column="0" selection-start="4436" selection-end="4436" vertical-scroll-proportion="-0.65384614">
@@ -513,8 +502,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="244" column="63" selection-start="11977" selection-end="11977" vertical-scroll-proportion="0.42487562">
+        <state line="244" column="63" selection-start="11977" selection-end="11977" vertical-scroll-proportion="-16.423077">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/popup/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="166" column="49" selection-start="5237" selection-end="5237" vertical-scroll-proportion="0.75574714">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -85,8 +85,8 @@
 
             return $.ajax({
                 type: 'POST',
-                data: params.url,
-                url: url,
+                data: params.data,
+                url: params.url,
                 statusCode: {
                     500: function() {
                         //todo: обновить объект gs!
@@ -164,6 +164,7 @@
                 $button = $(this);
 
             params.url = $button.attr('href');
+            params.data = $button.data('params');
 
             // выполняется _init();
             $(':block-popup').popup(params);
