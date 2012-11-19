@@ -8,21 +8,7 @@
         <meta name="description" content="">
         <meta name="keywords" content="">
 
-        <link rel="stylesheet" href="blocks/default.css">
-
-        <link rel="stylesheet" href="blocks/wrap/wrap.css">
-        <link rel="stylesheet" href="blocks/blast/blast.css">
-        <link rel="stylesheet" href="blocks/footer/footer.css">
-        <link rel="stylesheet" href="blocks/header/header.css">
-        <link rel="stylesheet" href="blocks/menu/menu.css">
-        <link rel="stylesheet" href="blocks/content/content.css">
-        <link rel="stylesheet" href="blocks/company/company.css">
-        <link rel="stylesheet" href="blocks/title/title.css">
-        <link rel="stylesheet" href="blocks/button/button.css">
-        <link rel="stylesheet" href="blocks/user/user.css">
-        <link rel="stylesheet" href="blocks/slider/slider.css">
-        <link rel="stylesheet" href="blocks/topic/topic.css">
-        <link rel="stylesheet" href="blocks/galleryPreview/galleryPreview.css">
+        {$aHtmlHeadFiles.css}
 
 
 
@@ -277,6 +263,8 @@
         </div>
 
         </body>
+
+        {$aHtmlHeadFiles.js}
 
     </html>
 {/strip}
