@@ -3,6 +3,10 @@
 
 $.widget("block.popup", {
 
+    options: {
+
+    },
+
     _create: function() {
         var block = this;
 
@@ -11,13 +15,6 @@ $.widget("block.popup", {
         block.$close = block.$overlay.find('.popup__close');
         block.$popupHead = block.$overlay.find('.popup__header');
         block.$popupContent = block.$overlay.find('.popup__content');
-
-        $('.popup__open').on('click', function() {
-            var data = $(this).data('popup');
-            block.open(data);
-
-            return false;
-        });
 
         // закрытие попапа при клике на оверлей
         block.$overlay.on('click', function(e) {
@@ -44,13 +41,9 @@ $.widget("block.popup", {
 
     },
 
+
     open: function(data) {
         var block = this;
-
-        if (data.template) {
-            var $content = $('.template.'+data.template).clone().show();
-            block.$popupContent.html($content);
-        }
 
         if (data.title) {
             block.$popupHead.html(data.title);
@@ -64,10 +57,43 @@ $.widget("block.popup", {
 
         block.$overlay.show();
 
-        //
-        //$content.initBlocks();
-
     },
+
+
+    // получение данных от сервера
+    _getData: function(url, params) {
+        var block = this;
+
+        //todo: создать объект gs и добавить security key!
+        params.security_ls_key = gs.security_key;
+
+//        if (url.indexOf('#') == 0) {
+//            return $(url).html();
+//        }
+
+        return $.ajax({
+            type: 'GET',
+            data: params,
+            url: url,
+//            success: function(data) {
+//
+//            },
+            statusCode: {
+                500: function() {
+                    // todo: показывать сообщение об ошибке
+                    // block.$content.html(MW.serverError500);
+                    // block.$popup.removeClass('modalBox__popup_loading');
+                }
+            },
+            timeout: 20000,
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                // todo: показывать сообщение об ошибке
+                // block.$content.html(MW.connectionLost);
+                // block.$popup.removeClass('modalBox__popup_loading');
+            }
+        });
+    },
+
 
     // метод для получения ширины скроллбара
     _getScrollbarWidth: function() {
@@ -106,4 +132,17 @@ $.widget("block.popup", {
         $('body').removeClass('popup_body').removeAttr('style');
     }
 
+});
+
+$(function() {
+
+    $('<div />').popup();
+
+    $('.popup__open').on('click', function() {
+        $(':block-popup').popup('show');
+
+
+
+        return false;
+    });
 });
