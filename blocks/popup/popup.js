@@ -43,12 +43,14 @@
         },
 
 
-        _init: function(params) {
+        show: function(params) {
+            console.log('go init');
+
             var block = this;
 
-            if (params.title) {
-                block.$popupHead.html(params.title);
-            }
+//            if (params.title) {
+//                block.$popupHead.html(params.title);
+//            }
 
             $('body')
                 .addClass('popup_body')
@@ -156,7 +158,7 @@
     });
 
     $(function() {
-        $('<div />').popup();
+        //$('<div />').popup();
 
         $('.popup__open').on('click', function() {
 
@@ -167,7 +169,7 @@
             params.data = $button.data('params');
 
             // выполняется _init();
-            $(':block-popup').popup(params);
+            $(':block-popup').popup('show', params);
 
             return false;
         });

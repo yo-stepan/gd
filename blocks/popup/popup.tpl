@@ -1,6 +1,6 @@
 {strip}
 
-    <div class="popup">
+    <div class="popup" block="popup">
 
         <div class="popup__window">
 

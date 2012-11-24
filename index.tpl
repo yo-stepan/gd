@@ -10,7 +10,18 @@
 
         {$aHtmlHeadFiles.css}
 
+        <script>
+            var gs = { };
 
+            gs.securityKey = 1111;
+
+            gs.popup = { };
+            gs.popup.error500 = "error 500";
+            gs.popup.error404 = "error 404";
+            gs.popup.errorTitle = "errorTitle";
+            gs.popup.later = "Later";
+
+        </script>
 
     </head>
 
@@ -22,7 +33,7 @@
 
         <div class="content">
 
-        <div class="header" block="header">
+        <div class="header">
 
             <a class="header__logo" href="/"></a>
 
@@ -206,7 +217,9 @@
                 </div>
 
                 <div class="company__infoBlock">
-                    <img src="http://static-maps.yandex.ru/1.x/?lang=ru-RU&ll=30.37430349999995%2C59.92721601596235&size=240%2C240&z=16&l=map" alt="">
+                    <a class="popup__open" href="http://static-maps.yandex.ru/1.x/?lang=ru-RU&ll=30.37430349999995%2C59.92721601596235&size=240%2C240&z=16&l=map">
+                        <img src="http://static-maps.yandex.ru/1.x/?lang=ru-RU&ll=30.37430349999995%2C59.92721601596235&size=240%2C240&z=16&l=map" alt="">
+                    </a>
                 </div>
 
                 <div class="title title_middle">Управляющие страницей:</div>
@@ -261,6 +274,8 @@
         <div class="footer">
 
         </div>
+
+        {include file='blocks/popup/popup.tpl'}
 
         </body>
 

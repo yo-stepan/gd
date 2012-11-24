@@ -9,6 +9,7 @@ $config['head']['default']['js'] = array(
     "___path.static.skin___/libs/jquery-ui-1.8.24.custom.min.js",
 
     "___path.static.skin___/blocks/slider/slider.js",
+    "___path.static.skin___/blocks/popup/popup.js",
 
     "___path.static.skin___/libs/jquery.initBlocks.js",
 
@@ -29,6 +30,7 @@ $config['head']['default']['css'] = array(
     "___path.static.skin___/blocks/slider/slider.css",
     "___path.static.skin___/blocks/topic/topic.css",
     "___path.static.skin___/blocks/galleryPreview/galleryPreview.css",
+    "___path.static.skin___/blocks/popup/popup.css",
 
 
 );
