@@ -6,7 +6,7 @@
     height: 50px;
     background: #fff;
 
-    -webkit-box-shadow: 0 3px 15px 0 #cfcfcf;
-       -moz-box-shadow: 0 3px 15px 0 #cfcfcf;
-            box-shadow: 0 3px 15px 0 #cfcfcf;
+    -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .18);
+       -moz-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .18);
+            box-shadow: 0 3px 15px 0 rgba(0, 0, 0, .18);
 }
