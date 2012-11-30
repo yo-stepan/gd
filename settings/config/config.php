@@ -19,6 +19,7 @@ $config['head']['default']['css'] = array(
     "___path.static.skin___/blocks/default.css",
     "___path.static.skin___/blocks/wrap/wrap.css",
     "___path.static.skin___/blocks/blast/blast.css",
+    "___path.static.skin___/blocks/bar/bar.css",
     "___path.static.skin___/blocks/footer/footer.css",
     "___path.static.skin___/blocks/header/header.css",
     "___path.static.skin___/blocks/menu/menu.css",
@@ -31,7 +32,6 @@ $config['head']['default']['css'] = array(
     "___path.static.skin___/blocks/topic/topic.css",
     "___path.static.skin___/blocks/galleryPreview/galleryPreview.css",
     "___path.static.skin___/blocks/popup/popup.css",
-
 
 );
 
