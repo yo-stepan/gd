@@ -35,77 +35,77 @@
 
             <div class="content">
 
-                <div class="header">
-                    <a class="header__logo" href="/"></a>
+                {*<div class="header">*}
+                    {*<a class="header__logo" href="/"></a>*}
 
-                    <ul class="menu ui-clearfix">
-                        <li class="menu__item"><a href="#" class="menu__link">Каталог салонов</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Сообщества</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">События</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Блоги</a></li>
-                        <li class="menu__item"><a href="#" class="menu__link">Фотографии</a></li>
-                    </ul>
-                </div>
-                <div class="header__blast"></div>
+                    {*<ul class="menu ui-clearfix">*}
+                        {*<li class="menu__item"><a href="#" class="menu__link">Каталог салонов</a></li>*}
+                        {*<li class="menu__item"><a href="#" class="menu__link">Сообщества</a></li>*}
+                        {*<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>*}
+                        {*<li class="menu__item"><a href="#" class="menu__link">События</a></li>*}
+                        {*<li class="menu__item"><a href="#" class="menu__link">Блоги</a></li>*}
+                        {*<li class="menu__item"><a href="#" class="menu__link">Фотографии</a></li>*}
+                    {*</ul>*}
+                {*</div>*}
+                {*<div class="header__blast"></div>*}
 
 
             <div class="company">
 
-            <div class="company__head ui-clearfix">
+            {*<div class="company__head ui-clearfix">*}
 
-                <div class="slider" block="slider">
+                {*<div class="slider" block="slider">*}
 
-                    <div class="slider__content">
+                    {*<div class="slider__content">*}
 
-                        <div class="slider__item" style="width: 300px;">
+                        {*<div class="slider__item" style="width: 300px;">*}
 
-                            <div class="slider__photo">
-                                <img class="slider__image" src="http://assets2.lookatme.ru/assets/post-image_featured/15/e9/181401/post-image_featured.369a00c2-4d21-4818-b747-65fac805ecd5.jpg" alt="">
-                                <div class="title title_little title_darkBg">
-                                    <span class="title__item">Парень </span><span class="title__item">в </span><span class="title__item">камуфляже, </span><span class="title__item">девушка-Микки-Маус</span>
-                                </div>
-                            </div>
+                            {*<div class="slider__photo">*}
+                                {*<img class="slider__image" src="http://assets2.lookatme.ru/assets/post-image_featured/15/e9/181401/post-image_featured.369a00c2-4d21-4818-b747-65fac805ecd5.jpg" alt="">*}
+                                {*<div class="title title_little title_darkBg">*}
+                                    {*<span class="title__item">Парень </span><span class="title__item">в </span><span class="title__item">камуфляже, </span><span class="title__item">девушка-Микки-Маус</span>*}
+                                {*</div>*}
+                            {*</div>*}
 
-                        </div>
+                        {*</div>*}
 
-                        <div class="slider__item">
+                        {*<div class="slider__item">*}
 
-                            <div class="slider__topic">
-                                <div class="title title_little title_light">Парень в камуфляже, девушка-Микки-Маус и другие гости Paris Fashion Week</div>
-                                <div class="slider__topicContent">
-                                    Салон красоты «Belle Femme» работает с 21 декабря 2011 года. Это заведение клубного типа
-                                </div>
-                            </div>
+                            {*<div class="slider__topic">*}
+                                {*<div class="title title_little title_light">Парень в камуфляже, девушка-Микки-Маус и другие гости Paris Fashion Week</div>*}
+                                {*<div class="slider__topicContent">*}
+                                    {*Салон красоты «Belle Femme» работает с 21 декабря 2011 года. Это заведение клубного типа*}
+                                {*</div>*}
+                            {*</div>*}
 
-                        </div>
+                        {*</div>*}
 
-                        <div class="slider__item" style="width: 300px;">
+                        {*<div class="slider__item" style="width: 300px;">*}
 
-                            <div class="slider__photo">
-                                <img class="slider__image" src="http://assets0.lookatme.ru/assets/post-image_featured/0d/67/183686/post-image_featured.4e3b1891-2f5f-4a2f-baf3-5c606b784b8a.jpg" alt="">
-                                <div class="title title_little title_darkBg">
-                                    <span class="title__item">Парень </span><span class="title__item">в </span><span class="title__item">камуфляже, </span><span class="title__item">девушка-Микки-Маус</span>
-                                </div>
-                            </div>
-                        </div>
+                            {*<div class="slider__photo">*}
+                                {*<img class="slider__image" src="http://assets0.lookatme.ru/assets/post-image_featured/0d/67/183686/post-image_featured.4e3b1891-2f5f-4a2f-baf3-5c606b784b8a.jpg" alt="">*}
+                                {*<div class="title title_little title_darkBg">*}
+                                    {*<span class="title__item">Парень </span><span class="title__item">в </span><span class="title__item">камуфляже, </span><span class="title__item">девушка-Микки-Маус</span>*}
+                                {*</div>*}
+                            {*</div>*}
+                        {*</div>*}
 
-                        <div class="slider__item" style="width: 300px;">
+                        {*<div class="slider__item" style="width: 300px;">*}
 
-                            <div class="slider__photo">
-                                <img class="slider__image" src="http://assets2.lookatme.ru/assets/post-image_featured/15/e9/181401/post-image_featured.369a00c2-4d21-4818-b747-65fac805ecd5.jpg" alt="">
-                                <div class="title title_little title_darkBg">
-                                    <span class="title__item">Парень </span><span class="title__item">в </span><span class="title__item">камуфляже, </span><span class="title__item">девушка-Микки-Маус</span>
-                                </div>
-                            </div>
+                            {*<div class="slider__photo">*}
+                                {*<img class="slider__image" src="http://assets2.lookatme.ru/assets/post-image_featured/15/e9/181401/post-image_featured.369a00c2-4d21-4818-b747-65fac805ecd5.jpg" alt="">*}
+                                {*<div class="title title_little title_darkBg">*}
+                                    {*<span class="title__item">Парень </span><span class="title__item">в </span><span class="title__item">камуфляже, </span><span class="title__item">девушка-Микки-Маус</span>*}
+                                {*</div>*}
+                            {*</div>*}
 
-                        </div>
+                        {*</div>*}
 
-                    </div>
+                    {*</div>*}
 
-                </div>
+                {*</div>*}
 
-            </div>
+            {*</div>*}
 
             <div class="company__content ui-clearfix">
 
@@ -137,7 +137,7 @@
 
 
 
-                    <div class="title title_middle">Блог</div>
+                    <div class="title title_middle">Блог салона</div>
 
 
                     <div class="topic topic_preview">
@@ -181,7 +181,7 @@
                     </div>
 
 
-                    <!-- div class="company__photos ui-clearfix">
+                    <div class="company__photos ui-clearfix">
 
                        <div class="title title_middle">Фотоальбомы</div>
 
@@ -199,7 +199,7 @@
                            <div class="galleryPreview__item galleryPreview__item_l4"><img src="http://assets3.furfurmag.ru/assets/post-image/35/88/160874/post-image-big.45e567ab-4bb8-46d0-b85e-63d6283e467f.jpg" alt=""></div>
                        </div>
 
-                   </div -->
+                   </div>
 
                 </div>
 

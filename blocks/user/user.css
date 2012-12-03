@@ -53,6 +53,8 @@
     width: 150px;
     height: 50px;
     padding: 0 0 0 65px;
+    color: #003CFF;
+    font-weight: bold;
 }
 
 .user_topic .user__pic {
