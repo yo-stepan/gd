@@ -114,7 +114,7 @@
                     <div class="title title_big">BeauMonde салон красоты & дневное СПА</div>
 
                     <div class="company__menu">
-                        <li class="company__menuItem"><a href="#" class="company__menuLink">О салоне</a></li>
+                        <li class="company__menuItem"><a href="#" class="company__menuLink company__menuLink_active">О салоне</a></li>
                         <li class="company__menuItem"><a href="#" class="company__menuLink">Отзывы</a></li>
                         <li class="company__menuItem"><a href="#" class="company__menuLink">Блог салона</a></li>
                         <li class="company__menuItem"><a href="#" class="company__menuLink">Фотоальбомы</a></li>
