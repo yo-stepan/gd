@@ -5,19 +5,24 @@
 
 .topic_preview {
     padding-left: 65px;
-    padding-top: 26px;
+    padding-top: 20px;
     margin-bottom: 30px;
 }
 
 .topic__content {
     position: relative;
-    margin: 0 0 15px 0;
+    margin: 0 0 20px 0;
+    line-height: 20px;
 }
 
 .topic__info {
     position: relative;
-    background: #fff;
     padding: 10px 10px;
+    border-top: 1px solid #ddd;
+}
+
+.topic_preview .topic__info {
+    /*margin-left: -65px;*/
 }
 
 .topic__date {

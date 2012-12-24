@@ -44,13 +44,7 @@
 
 
         show: function(params) {
-            console.log('go init');
-
             var block = this;
-
-//            if (params.title) {
-//                block.$popupHead.html(params.title);
-//            }
 
             $('body')
                 .addClass('popup_body')
@@ -65,6 +59,8 @@
             $.when(block._getData(params)).then(function(data) {
                 block.$popupContent.removeClass('popup__content_loading');
                 if (!data.bStateError) {
+
+                    block.$popupContent.html(data);
 
                 } else {
                     block._showError(data.sMsg ,data.sMsgTitle);
@@ -82,7 +78,7 @@
             params.security_ls_key = gs.securityKey;
 
             if (params.url.indexOf('#') == 0) {
-                return $(url).html();
+                return $(params.url).html();
             }
 
             return $.ajax({
@@ -158,7 +154,6 @@
     });
 
     $(function() {
-        //$('<div />').popup();
 
         $('.popup__open').on('click', function() {
 
@@ -168,7 +163,6 @@
             params.url = $button.attr('href');
             params.data = $button.data('params');
 
-            // выполняется _init();
             $(':block-popup').popup('show', params);
 
             return false;

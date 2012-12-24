@@ -50,9 +50,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 150px;
+    width: 250px;
     height: 50px;
     padding: 0 0 0 65px;
+    color: #003CFF;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 .user_topic .user__pic {
@@ -61,5 +64,4 @@
     left: 0;
     width: 50px;
     height: 50px;
-
 }

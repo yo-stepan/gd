@@ -9,7 +9,7 @@
     text-align: center;
 
     background: #333;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .8);
 }
 
 .popup__window {
@@ -21,48 +21,21 @@
 
     text-align: left;
     color: #eee;
-    padding: 15px;
+    padding: 25px;
     vertical-align: middle;
     margin: 100px 0;
     background: #f2f2f2;
-
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-         -o-border-radius: 4px;
-            border-radius: 4px;
 
     -webkit-box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .3);
        -moz-box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .3);
          -o-box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .3);
             box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .3);
-
-}
-
-.popup__header {
-    position: relative;
-    margin: -15px -15px 20px -15px;
-    background: #f1f1f1;
-    min-height: 44px;
-    padding: 0 30px 0 15px;
-    line-height: 44px;
-    color: #858484;
-    text-shadow: 0 1px 0 #fff;
-    font-size: 16px;
-
-    -webkit-border-radius: 4px 4px 0 0;
-       -moz-border-radius: 4px 4px 0 0;
-         -o-border-radius: 4px 4px 0 0;
-            border-radius: 4px 4px 0 0;
-
-    -webkit-box-shadow: inset 0 -40px 40px -20px #e0e0e0, 0 1px 0 0 #fff;
-       -moz-box-shadow: inset 0 -40px 40px -20px #e0e0e0, 0 1px 0 0 #fff;
-         -o-box-shadow: inset 0 -40px 40px -20px #e0e0e0, 0 1px 0 0 #fff;
-            box-shadow: inset 0 -40px 40px -20px #e0e0e0, 0 1px 0 0 #fff;
 }
 
 .popup__content {
     position: relative;
     color: #333;
+    min-height: 100px;
 }
 
 .popup__content_loading {
