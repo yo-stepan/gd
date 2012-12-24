@@ -1,0 +1,181 @@
+.share {
+    position: relative;
+    font: 11px Arial, sans-serif;
+}
+
+.share__content {
+    position: absolute;
+    width: 100px;
+    min-height: 20px;
+    top: 0;
+    left: -140px;
+    background: #f7f7f7;
+    z-index: 5;
+    padding: 20px 0 10px;
+}
+
+.share__content:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 0;
+    height: 0;
+
+    border: 20px solid transparent;
+    border-top: 20px solid #f7f7f7;
+    border-left-width: 0;
+}
+
+.share__content_fixed {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    margin-left: -610px;
+}
+
+.share__item {
+    position: relative;
+    margin: 0 15px 15px 15px;
+}
+.share__item:last-child {
+    margin-bottom: 10px;
+}
+
+.share__label {
+    display: block;
+    position: relative;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 11px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.share__label:hover {
+    -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 40px 20px -10px rgba(255, 255, 255, 0.2);
+       -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 40px 20px -10px rgba(255, 255, 255, 0.2);
+         -o-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 40px 20px -10px rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2), inset 0 40px 20px -10px rgba(255, 255, 255, 0.2);
+}
+
+.share__label_facebook {
+    background: #4f92d8;
+    text-shadow: 0 -1px 0 #457db8;
+}
+
+.share__label_googlePlus {
+    background: #de473c;
+
+}
+
+.share__label_twitter {
+    background: #6ed0f5;
+
+}
+
+.share__label_vk {
+    background: #597da3;
+
+}
+
+.share__count {
+    padding: 4px 2px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 0 8px 0;
+    position: relative;
+    background: #fff;
+}
+.share__count:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 -12px -6px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top: 6px solid #ccc;
+    z-index: 2;
+}
+.share__count:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin: 0 0 -10px -5px;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top: 5px solid #fff;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1130px) {
+
+    .share__content {
+        position: absolute;
+        left: 30px;
+        width: 580px;
+        top: 10px;
+        height: 40px;
+        overflow: hidden;
+        background: transparent;
+        border-bottom: 2px solid #fff;
+        text-align: center;
+
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+             -o-box-shadow: none;
+                box-shadow: none;
+    }
+
+    .share__content_fixed {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        margin-left: 0;
+    }
+
+    .share__item {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        height: 40px;
+        width: 120px;
+        margin: 0 10px 0 0;
+    }
+
+    .share__item:last-child {
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+
+    .share__count {
+        float: right;
+        padding: 4px 10px;
+        margin: 0 0 0 10px;
+    }
+
+    .share__count:before {
+        left: 0;
+        bottom: 50%;
+        margin: 0 0 -6px -12px;
+        border: 6px solid transparent;
+        border-right: 6px solid #ccc;
+    }
+    .share__count:after {
+        left: 0;
+        bottom: 50%;
+        margin: 0 0 -5px -10px;
+        border: 5px solid transparent;
+        border-right: 5px solid #fff;
+    }
+
+}

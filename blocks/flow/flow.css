@@ -1,0 +1,32 @@
+.flow {
+    position: relative;
+    margin: 0 -20px 20px 0;
+    /*background: #222;*/
+}
+
+.flow__item {
+    /*float: left;*/
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 200px;
+    margin: 0 20px 0 0;
+    text-decoration: none;
+}
+
+.flow__item:hover {
+    /*text-decoration: underline;*/
+}
+
+.flow__item:hover .flow__pic {
+    -webkit-box-shadow: 0 3px 0 0 red;
+       -moz-box-shadow: 0 3px 0 0 red;
+            box-shadow: 0 3px 0 0 red;
+}
+
+.flow__pic {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 0 15px 0;
+}

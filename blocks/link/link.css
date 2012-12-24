@@ -1,0 +1,35 @@
+.link {
+    text-decoration: none;
+    color: #245DC1;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link_white {
+    color: #222;
+}
+
+.link_in {
+    border-bottom: 1px dotted;
+}
+
+.link_bul {
+    position: relative;
+}
+
+.link_bul:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -16px;
+
+    border-width: 8px;
+    border-style: solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}

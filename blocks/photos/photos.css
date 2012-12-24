@@ -1,0 +1,7 @@
+.photos {
+    position: relative;
+}
+
+.photos__item {
+    float: left;
+}

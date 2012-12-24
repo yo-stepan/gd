@@ -1,0 +1,22 @@
+.column {
+    position: relative;
+    width: 940px;
+    padding: 0 20px;
+    min-height: 10px;
+
+    margin: 0 auto;
+}
+
+.column_bg-white {
+    background: #fff;
+}
+
+.column_right {
+    width: 260px;
+    margin-right: -20px;
+}
+
+.column_left {
+    width: 640px;
+    margin-left: -20px;
+}
