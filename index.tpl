@@ -50,23 +50,34 @@
             </div>
         </div>
 
-        <div class="feature feature_company">
+        <div itemscope itemtype="http://schema.org/Organization">
+            <div itemprop="name"><strong>Салон</strong></div>
+            <div itemprop="description">описание</div>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">адрес</span><br>
+            </div>
+        </div>
+
+
+        <div class="feature" itemscope itemtype="http://schema.org/Organization">
             <div class="column ui-clearfix">
                 
-                <img class="ui-fl" style="margin-right: 20px;" src="http://assets0.lookatme.ru/assets/post-image/fe/d1/186216/post-image-big.c662205d-2a96-44e3-93a0-721b6b5e687e.jpg" alt="">
+                <img itemprop="image" class="ui-fl" style="margin-right: 20px;" src="http://assets0.lookatme.ru/assets/post-image/fe/d1/186216/post-image-big.c662205d-2a96-44e3-93a0-721b6b5e687e.jpg" alt="">
 
                 <div class="plate plate_withIcon ui-fr">
                     <div class="title title_middle">Контакты</div>
-                    <div class="text" style="margin-bottom: 0;">
-                        <a class="link" href="#">проспект Энгельса, 134, корпус 3</a><br>
-                        <a class="link popup__open" href="#subway">Невский проспект</a><br>
-                        <span>+7 (821) 345-6789</span><br>
+                    <div class="text">
+                        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <a class="link" href="#" itemprop="streetAddress">проспект Энгельса, 134, корпус 3</a>
+                        </div>
+                        <a itemprop="station" class="link popup__open" href="#subway">Невский проспект</a><br>
+                        <span itemprop="telephone">+7 (821) 345-6789</span><br>
                         <a class="link" href="#">www.site.com</a>
                     </div>
 
                 </div>
 
-                <div class="title title_big">BeauMonde салон красоты & дневное СПА</div>
+                <div class="title title_big" itemprop="name">BeauMonde салон красоты & дневное СПА</div>
 
                 <a href="#" class="button">Подписаться</a>
                 <a href="#" class="button">Я работаю здесь</a>
