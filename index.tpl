@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="feature">
+        <div class="feature feature_company">
             <div class="column ui-clearfix">
                 
                 <img class="ui-fl" style="margin-right: 20px;" src="http://assets0.lookatme.ru/assets/post-image/fe/d1/186216/post-image-big.c662205d-2a96-44e3-93a0-721b6b5e687e.jpg" alt="">
