@@ -50,15 +50,6 @@
             </div>
         </div>
 
-        <div itemscope itemtype="http://schema.org/Organization">
-            <div itemprop="name"><strong>Салон</strong></div>
-            <div itemprop="description">описание</div>
-            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                <span itemprop="streetAddress">адрес</span><br>
-            </div>
-        </div>
-
-
         <div class="feature" itemscope itemtype="http://schema.org/Organization">
             <div class="column ui-clearfix">
                 
