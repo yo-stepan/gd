@@ -100,7 +100,7 @@
                     {*</div>*}
                 {*</div>*}
 
-                <div class="menu menu_page ui-clearfix">
+                <li class="menu menu_page ui-clearfix">
                     {*<li class="menu__item"><a href="#" class="menu__link">О салоне</a></li>*}
                     <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Блог салона</a></li>
@@ -108,7 +108,7 @@
                     <li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">События</a></li>
                     <li class="menu__item"><a href="#" class="menu__link">Вакансии</a></li>
-                </div>
+                </li>
 
                 <div class="text text_bottomBorder ui-clearfix">
 
