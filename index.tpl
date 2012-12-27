@@ -274,7 +274,7 @@
                             <a href="#" class="button">Я работаю здесь</a>
                         </div>
 
-                        <div class="company__menu">
+                        <ul class="company__menu">
                             <li class="company__menuItem"><a href="#" class="company__menuLink company__menuLink_active">О салоне</a></li>
                             <li class="company__menuItem"><a href="#" class="company__menuLink">Отзывы</a></li>
                             <li class="company__menuItem"><a href="#" class="company__menuLink">Блог салона</a></li>
@@ -282,7 +282,7 @@
                             <li class="company__menuItem"><a href="#" class="company__menuLink">Акции</a></li>
                             <li class="company__menuItem"><a href="#" class="company__menuLink">События</a></li>
                             <li class="company__menuItem"><a href="#" class="company__menuLink">Вакансии</a></li>
-                        </div>
+                        </ul>
 
                         <div class="company__about">
                             Салон красоты «Belle Femme» работает с 21 декабря 2011 года. Это заведение клубного типа, оформленное в минималистском стиле, где каждый клиент чувствует себя желанным и единственным. Здесь оказывают услуги высокого уровня, удерживая цены на среднем. Девиз «Belle Femme» - лучшее доступно каждому!
