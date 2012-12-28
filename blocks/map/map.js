@@ -48,8 +48,10 @@ $.widget("block.map", {
     },
 
     resize: function() {
-        this.map.resize();
-        google.maps.event.trigger(this.map, 'resize');
+        console.log('go resize');
+
+        //this.map.resize();
+        google.maps.event.trigger(this.element[0], 'resize');
 
     },
 
