@@ -7,12 +7,7 @@ $.widget("block.feature_map", {
         block.$mapShow = $block.find('.feature__mapShow');
 
         block.$mapShow.on('click', function() {
-            $block.animate({
-                height: 500
-            }, 300, function() {
-                //callback
-            });
-
+            $block.addClass('feature_open');
             return false;
         });
 
