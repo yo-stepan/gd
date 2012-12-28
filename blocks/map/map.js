@@ -48,11 +48,13 @@ $.widget("block.map", {
     },
 
     resize: function() {
+        this.map.resize();
         google.maps.event.trigger(this.map, 'resize');
+
     },
 
     setCenter: function() {
-
+        //this.map.getCenter();
     }
 
 });
