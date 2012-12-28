@@ -5,9 +5,16 @@ $.widget("block.feature_map", {
             $block = this.element;
 
         block.$mapShow = $block.find('.feature__mapShow');
+        block.$map = $block.find('.map');
 
         block.$mapShow.on('click', function() {
-            $block.addClass('feature_open');
+            //$block.addClass('feature_open');
+            $block.animate({
+                height: 500
+            }, 300, function() {
+                block.$map.map('expand');
+            });
+
             return false;
         });
 

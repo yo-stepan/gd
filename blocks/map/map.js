@@ -41,6 +41,19 @@ $.widget("block.map", {
         var map = new google.maps.Map(this.element[0],  mapOptions);
         map.setOptions({'styles': styles});
 
+    },
+
+    expand: function() {
+        this.resize();
+        this.setCenter();
+    },
+
+    resize: function() {
+        google.maps.event.trigger(map, 'resize');
+    },
+
+    setCenter: function() {
+
     }
 
 });
