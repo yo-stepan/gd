@@ -1,6 +1,8 @@
 $.widget("block.feature_map", {
 
     _create: function() {
+        console.log('go feature map');
+
         var block = this,
             $block = this.element;
 
