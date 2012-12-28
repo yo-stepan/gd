@@ -38,9 +38,8 @@ $.widget("block.map", {
             }
         ];
 
-        var map = new google.maps.Map(this.element[0],  mapOptions);
-        map.setOptions({'styles': styles});
-
+        block.map = new google.maps.Map(this.element[0],  mapOptions);
+        block.map.setOptions({'styles': styles});
     },
 
     expand: function() {
@@ -49,7 +48,7 @@ $.widget("block.map", {
     },
 
     resize: function() {
-        google.maps.event.trigger(map, 'resize');
+        google.maps.event.trigger(this.map, 'resize');
     },
 
     setCenter: function() {
