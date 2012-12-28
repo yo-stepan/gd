@@ -50,7 +50,7 @@
             </div>
         </div>
 
-        <div class="feature" block="feature_map" itemscope itemtype="http://schema.org/Organization">
+        <div class="feature feature_map" block="feature_map" itemscope itemtype="http://schema.org/Organization">
 
             <div class="map map_feature" block="map"></div>
 

@@ -49,6 +49,14 @@
     background: #6f97ba;
 }
 
+.feature_map {
+    -webkit-transition: height .3s ease;
+       -moz-transition: height .3s ease;
+         -o-transition: height .3s ease;
+            transition: height .3s ease;
+}
+
+
 .feature_open {
     height: 500px;
 }
