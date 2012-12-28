@@ -54,8 +54,22 @@ $.widget("block.map", {
         //this.map.getCenter();
     },
 
-    changeStyle: function(style) {
+    changeStyle: function() {
+        console.log('go change style');
 
+        var styles = [
+            {
+                "stylers": [
+                    { "visibility": "simplified" },
+                    { "weight": 0.1 },
+                    { "saturation": 0 },
+                    { "lightness": 17 },
+                    { "gamma": 1.02 }
+                ]
+            }
+        ];
+
+        this.map.setOptions({'styles': styles});
     }
 
 });
