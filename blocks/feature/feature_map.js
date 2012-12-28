@@ -8,6 +8,7 @@ $.widget("block.feature_map", {
 
         block.$mapShow.on('click', function() {
             $block.addClass('feature_open');
+            return false;
         });
 
     }
