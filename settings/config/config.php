@@ -12,6 +12,7 @@ $config['head']['default']['js'] = array(
     "___path.static.skin___/blocks/flow/flow.js",
     "___path.static.skin___/blocks/share/share.js",
     "___path.static.skin___/blocks/map/map.js",
+    "___path.static.skin___/blocks/feature/feature_map.js",
 
     "___path.static.skin___/libs/jquery.initBlocks.js",
 

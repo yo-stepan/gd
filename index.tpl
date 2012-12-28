@@ -50,11 +50,9 @@
             </div>
         </div>
 
-        <div class="feature" itemscope itemtype="http://schema.org/Organization">
+        <div class="feature" block="feature_map" itemscope itemtype="http://schema.org/Organization">
 
-            <div class="map map_feature" block="map">
-
-            </div>
+            <div class="map map_feature" block="map"></div>
 
             <div class="column ui-clearfix">
                 
@@ -64,7 +62,7 @@
                     <div class="title title_middle">Контакты</div>
                     <div class="text text_noMarginBottom">
                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <a class="link" href="#" itemprop="streetAddress">проспект Энгельса, 134, корпус 3</a>
+                            <a class="link feature__mapShow" href="#" itemprop="streetAddress">проспект Энгельса, 134, корпус 3</a>
                         </div>
                         <a itemprop="station" class="link popup__open" href="#subway">Невский проспект</a><br>
                         <span itemprop="telephone">+7 (821) 345-6789</span><br>
