@@ -8,22 +8,16 @@ $.widget("block.map", {
     },
 
     _create: function() {
+        console.log('go map');
+
+
         var block = this,
             $block = this.element,
             mapOptions = {
                 center: new google.maps.LatLng(59.928184,30.333149),
                 zoom: 16,
                 disableDefaultUI: true,
-                mapTypeId: google.maps.MapTypeId[block.options.mapType],
-
-                "stylers": [
-                    { "visibility": "simplified" },
-                    { "weight": 0.1 },
-                    { "saturation": -69 },
-                    { "lightness": 17 },
-                    { "gamma": 1.02 }
-                ]
-
+                mapTypeId: google.maps.MapTypeId[block.options.mapType]
             };
 
         var styles = [
@@ -44,7 +38,8 @@ $.widget("block.map", {
 
     expand: function() {
         this.resize();
-        this.setCenter();
+        //this.setCenter();
+        this.changeStyle();
     },
 
     resize: function() {
@@ -57,6 +52,10 @@ $.widget("block.map", {
 
     setCenter: function() {
         //this.map.getCenter();
+    },
+
+    changeStyle: function(style) {
+
     }
 
 });
