@@ -38,15 +38,9 @@ $.widget("block.map", {
             }
         ];
 
-        block.map = new google.maps;
+        var map = new google.maps.Map(this.element[0],  mapOptions);
+        map.setOptions({'styles': styles});
 
-        block.map.Map(this.element[0],  mapOptions);
-        block.map.setOptions({'styles': styles});
-
-    },
-
-    resize: function() {
-        this.map.event.trigger(map, "resize");
     }
 
 });
