@@ -9,3 +9,7 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 30px;
 }
+
+.text_noMarginBottom {
+    margin-bottom: 0;
+}

@@ -11,6 +11,7 @@ $config['head']['default']['js'] = array(
     "___path.static.skin___/blocks/popup/popup.js",
     "___path.static.skin___/blocks/flow/flow.js",
     "___path.static.skin___/blocks/share/share.js",
+    "___path.static.skin___/blocks/map/map.js",
 
     "___path.static.skin___/libs/jquery.initBlocks.js",
 
@@ -42,6 +43,7 @@ $config['head']['default']['css'] = array(
     "___path.static.skin___/blocks/photos/photos.css",
     "___path.static.skin___/blocks/share/share.css",
     "___path.static.skin___/blocks/plate/plate.css",
+    "___path.static.skin___/blocks/map/map.css",
 
 );
 

@@ -18,6 +18,8 @@
             block.$popupHead = block.$overlay.find('.popup__header');
             block.$popupContent = block.$overlay.find('.popup__content');
 
+            block.scrollbarWidth = block._getScrollbarWidth();
+
             // закрытие попапа при клике на оверлей
             block.$overlay.on('click', function(e) {
                 if (e.target === this) {
@@ -49,7 +51,7 @@
             $('body')
                 .addClass('popup_body')
                 .css({
-                    'padding-right': block._getScrollbarWidth()
+                    'padding-right': block.scrollbarWidth
                 });
 
             block.$overlay.show();
@@ -113,31 +115,29 @@
 
         // метод для получения ширины скроллбара
         _getScrollbarWidth: function() {
-            var block = this;
+            var scrollbarWidth = 0;
 
-            if (!block.scrollbarWidth) {
-                if ($.browser.msie) {
-                    var $textarea1 = $('<textarea cols="10" rows="2"></textarea>'),
-                        $textarea2 = $('<textarea cols="10" rows="2" style="overflow: hidden;"></textarea>');
+            if ($.browser.msie) {
+                var $textarea1 = $('<textarea cols="10" rows="2"></textarea>'),
+                    $textarea2 = $('<textarea cols="10" rows="2" style="overflow: hidden;"></textarea>');
 
-                    $textarea1.css({ position: 'absolute', top: -1000, left: -1000 }).appendTo('body');
-                    $textarea2.css({ position: 'absolute', top: -1000, left: -1000 }).appendTo('body');
+                $textarea1.css({ position: 'absolute', top: -1000, left: -1000 }).appendTo('body');
+                $textarea2.css({ position: 'absolute', top: -1000, left: -1000 }).appendTo('body');
 
-                    block.scrollbarWidth = $textarea1.width() - $textarea2.width();
-                    $textarea1.add($textarea2).remove();
-                } else {
-                    var $div = $('<div />');
+                scrollbarWidth = $textarea1.width() - $textarea2.width();
+                $textarea1.add($textarea2).remove();
+            } else {
+                var $div = $('<div />');
 
-                    $div.css({ width: 100, height: 100, overflow: 'auto', position: 'absolute', top: -1000, left: -1000})
-                        .prependTo('body').append('<div />').find('div')
-                        .css({ width: '100%', height: '200px' });
+                $div.css({ width: 100, height: 100, overflow: 'auto', position: 'absolute', top: -1000, left: -1000})
+                    .prependTo('body').append('<div />').find('div')
+                    .css({ width: '100%', height: '200px' });
 
-                    block.scrollbarWidth = 100 - $div.find('div').width();
-                    $div.remove();
-                }
+                scrollbarWidth = 100 - $div.find('div').width();
+                $div.remove();
             }
 
-            return block.scrollbarWidth;
+            return scrollbarWidth;
         },
 
         close: function() {

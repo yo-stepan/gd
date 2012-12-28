@@ -21,3 +21,7 @@
     left: 0;
     top: 0;
 }
+
+.plate_noBottomMargin {
+    margin-bottom: 0;
+}

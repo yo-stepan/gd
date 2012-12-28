@@ -51,13 +51,18 @@
         </div>
 
         <div class="feature" itemscope itemtype="http://schema.org/Organization">
+
+            <div class="map map_feature" block="map">
+
+            </div>
+
             <div class="column ui-clearfix">
                 
                 <img itemprop="image" class="ui-fl" style="margin-right: 20px;" src="http://assets0.lookatme.ru/assets/post-image/fe/d1/186216/post-image-big.c662205d-2a96-44e3-93a0-721b6b5e687e.jpg" alt="">
 
-                <div class="plate plate_withIcon ui-fr">
+                <div class="plate plate_withIcon plate_noBottomMargin ui-fr">
                     <div class="title title_middle">Контакты</div>
-                    <div class="text">
+                    <div class="text text_noMarginBottom">
                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                             <a class="link" href="#" itemprop="streetAddress">проспект Энгельса, 134, корпус 3</a>
                         </div>
@@ -484,7 +489,9 @@
         </div>
 
     </body>
-
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqCkDs8e414Rn2i2Hfdt9W0jSxCHHynAg&sensor=false">
+        </script>
         {$aHtmlHeadFiles.js}
 
     </html>
