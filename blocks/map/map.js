@@ -60,11 +60,11 @@ $.widget("block.map", {
         var styles = [
             {
                 "stylers": [
-                    { "visibility": "simplified" },
-                    { "weight": 0.1 },
-                    { "saturation": 0 },
-                    { "lightness": 17 },
-                    { "gamma": 1.02 }
+                    { "visibility": "on" },
+                    { "weight": 1 },
+                    { "saturation": 1 },
+                    { "lightness": 1 },
+                    { "gamma": 1 }
                 ]
             }
         ];
