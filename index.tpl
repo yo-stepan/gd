@@ -35,25 +35,29 @@
                 <div class="bar__row bar__row_top">
                     <div class="bar__top">
 
-                        {if $oUserCurrent}
+                        <div class="column">
 
-                            <div class="userCard ui-fr">
+                            {if $oUserCurrent}
 
-                                <a class="user user_middle" href="{$oUserCurrent->getUserWebPath()}">
-                                    <img class="user__pic" src="{$oUserCurrent->getProfileAvatarPath(24)}" alt="">
-                                    <span class="user__name">{$oUserCurrent->getLogin()}</span>
-                                </a>
+                                <div class="userCard ui-fr">
 
-                            </div>
+                                    <a class="user user_middle" href="{$oUserCurrent->getUserWebPath()}">
+                                        <img class="user__pic" src="{$oUserCurrent->getProfileAvatarPath(24)}" alt="">
+                                        <span class="user__name">{$oUserCurrent->getLogin()}</span>
+                                    </a>
 
-                        {else}
+                                </div>
 
-                            <ul class="simpleMenu ui-clearfix ui-fr">
-                                <li class="simpleMenu__item"><a class="link" href="{router page='login'}">Войти</a></li>
-                                <li class="simpleMenu__item"><a class="link" href="{router page='registration'}">Зарегистрироваться</a></li>
-                            </ul>
+                            {else}
 
-                        {/if}
+                                <ul class="simpleMenu ui-clearfix ui-fr">
+                                    <li class="simpleMenu__item"><a class="link" href="{router page='login'}">Войти</a></li>
+                                    <li class="simpleMenu__item"><a class="link" href="{router page='registration'}">Зарегистрироваться</a></li>
+                                </ul>
+
+                            {/if}
+
+                        </div>
 
                     </div>
                 </div>
@@ -149,7 +153,7 @@
                             <div class="text">
                                 Салон красоты «Belle Femme» работает с 21 декабря 2011 года. Это заведение клубного типа, оформленное в минималистском стиле
                             </div>
-                            <a class="link link_bul" href="#">Прочитать полностью</a>
+                            <a class="link link_bul" href="#">Все услуги</a>
                         </div>
 
                     </div>
