@@ -62,6 +62,7 @@
 
 .feature__companyName {
     max-width: 520px;
+    min-width: 400px;
     padding: 20px;
 
     background: #fff;
