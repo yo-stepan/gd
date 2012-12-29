@@ -46,8 +46,9 @@ $.widget("block.map", {
         console.log('go resize');
 
         //this.map.resize();
-        google.maps.event.trigger(this.map, 'resize');
-
+        setTimeout(function() {
+            google.maps.event.trigger(this.map, 'resize');
+        }, 10);
     },
 
     setCenter: function() {
