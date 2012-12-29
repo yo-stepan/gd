@@ -78,7 +78,7 @@
 
             <div class="feature feature_map" block="feature_map" itemscope itemtype="http://schema.org/Organization">
 
-                <div class="map map_feature" block="map"></div>
+                <div class="map map_feature" block="mapmap"></div>
 
                 <div class="column ui-clearfix">
 

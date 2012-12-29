@@ -1,4 +1,4 @@
-$.widget("block.map", {
+$.widget("block.mapmap", {
 
     options: {
         center: null,
