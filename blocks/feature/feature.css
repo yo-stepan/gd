@@ -61,6 +61,14 @@
     height: 500px;
 }
 
+.feature__companyName {
+    max-width: 400px;
+    padding: 10px;
+
+    background: #000;
+    background: rgba(0, 0, 0, .5);
+}
+
 .feature__photos {
     position: absolute;
     top: 0;

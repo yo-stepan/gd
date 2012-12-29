@@ -99,6 +99,12 @@
 
                     <img itemprop="image" class="ui-fl" style="margin-right: 20px;" src="http://assets0.lookatme.ru/assets/post-image/fe/d1/186216/post-image-big.c662205d-2a96-44e3-93a0-721b6b5e687e.jpg" alt="">
 
+                    <div class="feature__companyName ui-fl">
+                        <div class="title title_big" itemprop="name">BeauMonde салон красоты & дневное СПА</div>
+                        <a href="#" class="button">Подписаться</a>
+                        <a href="#" class="button">Я работаю здесь</a>
+                    </div>
+
                     <div class="plate plate_withIcon plate_noBottomMargin ui-fr">
                         <div class="title title_middle">Контакты</div>
                         <div class="text text_noMarginBottom">
@@ -109,13 +115,9 @@
                             <span itemprop="telephone">+7 (821) 345-6789</span><br>
                             <a class="link" href="#">www.site.com</a>
                         </div>
-
                     </div>
 
-                    <div class="title title_big" itemprop="name">BeauMonde салон красоты & дневное СПА</div>
 
-                    <a href="#" class="button">Подписаться</a>
-                    <a href="#" class="button">Я работаю здесь</a>
 
                 </div>
             </div>
