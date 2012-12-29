@@ -64,8 +64,8 @@
     max-width: 700px;
     padding: 20px;
 
-    background: #000;
-    background: rgba(0, 0, 0, .5);
+    background: #fff;
+    background: rgba(255, 255, 255, .5);
 }
 
 .feature__photos {
