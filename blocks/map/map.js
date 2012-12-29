@@ -32,8 +32,8 @@ $.widget("block.mapmap", {
             }
         ];
 
-        block.map = new google.maps.Map(this.element[0],  mapOptions);
-        block.map.setOptions({'styles': styles});
+        block.maps = new google.maps.Map(this.element[0],  mapOptions);
+        block.maps.setOptions({'styles': styles});
     },
 
     _init: function() {
@@ -50,9 +50,7 @@ $.widget("block.mapmap", {
         console.log('go resize');
 
         //this.map.resize();
-        setTimeout(function() {
-            google.maps.event.trigger(this.map, 'resize');
-        }, 100);
+        google.maps.event.trigger(this.maps, 'resize');
     },
 
     setCenter: function() {
@@ -74,7 +72,7 @@ $.widget("block.mapmap", {
             }
         ];
 
-        this.map.setOptions({'styles': styles});
+        this.maps.setOptions({'styles': styles});
     }
 
 });
