@@ -1,0 +1,35 @@
+.field {
+    position: relative;
+    display: block;
+    vertical-align: top;
+
+    width: 100%;
+    border: 1px solid #d8d8d8;
+    padding: 15px 20px;
+    background: transparent;
+
+    font-family: "Arial", "Verdana", sans-serif;
+    font-size: 15px;
+    color: #333;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.field:focus {
+    border-color: #8a2be2;
+    outline: 0;
+}
+
+.field_error {
+    border-color: red;
+}
+
+.field_text {
+    resize: vertical;
+    line-height: 18px;
+    height: 140px;
+    padding: 20px;
+    margin: 0 0;
+}

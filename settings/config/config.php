@@ -13,6 +13,7 @@ $config['head']['default']['js'] = array(
     "___path.static.skin___/blocks/share/share.js",
     "___path.static.skin___/blocks/map/map.js",
     "___path.static.skin___/blocks/feature/feature_map.js",
+    "___path.static.skin___/blocks/select/select.js",
 
     "___path.static.skin___/libs/jquery.initBlocks.js",
 
@@ -27,11 +28,9 @@ $config['head']['default']['css'] = array(
     "___path.static.skin___/blocks/header/header.css",
     "___path.static.skin___/blocks/menu/menu.css",
     "___path.static.skin___/blocks/content/content.css",
-    "___path.static.skin___/blocks/company/company.css",
     "___path.static.skin___/blocks/title/title.css",
     "___path.static.skin___/blocks/button/button.css",
     "___path.static.skin___/blocks/user/user.css",
-    "___path.static.skin___/blocks/slider/slider.css",
     "___path.static.skin___/blocks/topic/topic.css",
     "___path.static.skin___/blocks/galleryPreview/galleryPreview.css",
     "___path.static.skin___/blocks/popup/popup.css",
@@ -45,6 +44,8 @@ $config['head']['default']['css'] = array(
     "___path.static.skin___/blocks/share/share.css",
     "___path.static.skin___/blocks/plate/plate.css",
     "___path.static.skin___/blocks/map/map.css",
+    "___path.static.skin___/blocks/select/select.css",
+    "___path.static.skin___/blocks/field/field.css",
 
 );
 
