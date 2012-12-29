@@ -36,6 +36,10 @@ $.widget("block.map", {
         block.map.setOptions({'styles': styles});
     },
 
+    _init: function() {
+        console.log('go _init');
+    },
+
     expand: function() {
         this.resize();
         //this.setCenter();
