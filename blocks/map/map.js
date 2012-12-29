@@ -41,18 +41,18 @@ $.widget("block.mapmap", {
     },
 
     expand: function() {
-        this.resize();
+        this._resize();
         //this.setCenter();
         this.changeStyle();
     },
 
-    resize: function() {
+    _resize: function() {
         console.log('go resize');
 
         //this.map.resize();
         setTimeout(function() {
             google.maps.event.trigger(this.map, 'resize');
-        }, 10);
+        }, 100);
     },
 
     setCenter: function() {
