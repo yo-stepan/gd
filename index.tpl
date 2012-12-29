@@ -14,7 +14,7 @@
         <script>
             var gs = { };
 
-            gs.securityKey = 1111;
+            gs.securityKey = "{$LIVESTREET_SECURITY_KEY}";
 
             gs.popup = { };
             gs.popup.error500 = "error 500";
@@ -34,6 +34,26 @@
 
                 <div class="bar__row bar__row_top">
                     <div class="bar__top">
+
+                        {if $oUserCurrent}
+
+                            <div class="userCard ui-fr">
+
+                                <a class="user user_middle" href="{$oUserCurrent->getUserWebPath()}">
+                                    <img class="user__pic" src="{$oUserCurrent->getProfileAvatarPath(24)}" alt="">
+                                    <span class="user__name">{$oUserCurrent->getLogin()}</span>
+                                </a>
+
+                            </div>
+
+                        {else}
+
+                            <ul class="simpleMenu ui-clearfix ui-fr">
+                                <li class="simpleMenu__item"><a class="link" href="{router page='login'}">Войти</a></li>
+                                <li class="simpleMenu__item"><a class="link" href="{router page='registration'}">Зарегистрироваться</a></li>
+                            </ul>
+
+                        {/if}
 
                     </div>
                 </div>

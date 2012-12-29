@@ -46,6 +46,8 @@ $config['head']['default']['css'] = array(
     "___path.static.skin___/blocks/map/map.css",
     "___path.static.skin___/blocks/select/select.css",
     "___path.static.skin___/blocks/field/field.css",
+    "___path.static.skin___/blocks/userCard/userCard.css",
+    "___path.static.skin___/blocks/simpleMenu/simpleMenu.css",
 
 );
 

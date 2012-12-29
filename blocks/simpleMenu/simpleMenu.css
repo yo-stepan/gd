@@ -1,0 +1,8 @@
+.simpleMenu {
+    position: relative;
+}
+
+.simpleMenu__item {
+    position: relative;
+    float: left;
+}
