@@ -14,7 +14,7 @@ $.widget("block.feature_map", {
             $block.animate({
                 height: 500
             }, 300, function() {
-                block.$map.map('expand');
+                block.$map.mapmap('expand');
             });
 
             return false;
